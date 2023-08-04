@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Gera</title>
+    <link rel="stylesheet" href="styleMali.css">
+    <link rel="icon" href="../Images/money_639365.png">
+</head>
+<body>
+    <h1>¡Es un gusto volverte a ver, Gera!</h1>
+    
+    <main>
+        <div>
+            <button class="boton__saldo" onclick="consultaSaldoGera()" id="consultaGera">Consultar saldo</button><br>
+        </div>
+        <div>
+            <p class="p__monto">Ingresar monto:</p>
+            <input class="input__monto" id="montoGera" inputmode="numeric" type="number"><br>
+            <button class="boton__abono" onclick="depositarSaldo()" id="botonAbonoGera">Abonar</button>
+            <button class="boton__retiro" onclick="retirarSaldo()" id="botonRetiroGera" >Retirar</button>
+        </div>
+
+        <section class="contenedor__avisos">
+            <p class="p_aviso" id="avisoGera"></p>
+            <p class="p_aviso--nopermitido" id="avisoNoPermitidoGera"></p>
+        </section>
+
+        <div>
+            <button class="boton__salir" id="botonSalir" onclick="regresarAInicio()">Salir</button>
+        </div>
+    </main>
+
+<script src="appGera.js" ></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola Mali</title>
+    <link rel="stylesheet" href="styleMali.css">
+    <link rel="icon" href="../Images/money_639365.png">
+</head>
+<body>
+    <h1>¡Es un gusto volverte a ver, Mali!</h1>
+    
+    <main>
+        <div>
+            <button class="boton__saldo" onclick="consultaSaldoMali()" id="consultaMali">Consultar saldo</button><br>
+        </div>
+        <div>
+            <p class="p__monto">Ingresar monto:</p>
+            <input class="input__monto" id="montoMali" inputmode="numeric" type="number"><br>
+            <button class="boton__abono" onclick="depositarSaldo()" id="botonAbonoMali">Abonar</button>
+            <button class="boton__retiro" onclick="retirarSaldo()" id="botonRetiroMali" >Retirar</button>
+        </div>
+
+        <section class="contenedor__avisos">
+            <p class="p_aviso" id="avisoMali"></p>
+            <p class="p_aviso--nopermitido" id="avisoNoPermitidoMali"></p>
+        </section>
+
+        <div>
+            <button class="boton__salir" id="botonSalir" onclick="regresarAInicio()">Salir</button>
+        </div>
+    </main>
+
+<script src="appMali.js" ></script>
+</body>
+</html>
